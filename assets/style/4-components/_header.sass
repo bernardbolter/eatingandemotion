@@ -4,7 +4,11 @@
     background: white
     background: linear-gradient(to left, rgba(255,255,255,0.8) 1%, white)
     // background: url(./img/back-gradient.png) repeat-y
-    border-top-left-radius: 75px
+    border-top-left-radius: 50px
+
+    @media (min-width: $tablet)
+        border-top-left-radius: 75px
+    
 
 .portrait-wrap
     width: 100%
@@ -13,10 +17,15 @@
     justify-content: space-between
 
     img
-        width: 150px
-        height: 150px
+        width: 100px
+        height: 100px
         border-radius: 50%
-        margin: 20px 0 0 20px
+        margin: 10px 0 0 10px
+
+        @media (min-width: $tablet)
+            width: 125px
+            height: 125px
+            margin: 20px 0 0 20px
 
 .title
     margin: 25px 10%
@@ -25,38 +34,54 @@
         font-family: $heading-font
         font-weight: 300
         color: $heading-color
-        font-size: 36px
+        font-size: 24px
         text-align: right
         text-transform: uppercase
         padding: 0
         margin: 0
 
+        @media (min-width: $tablet)
+            font-size: 36px
+
 .name
-    width: 150px
-    margin: 0 0 0 150px
+    width: 120px
+    margin: 0 0 0 30px
+
+    @media (min-width: $tablet)
+        width: 150px
+        margin: 0 0 0 150px
     
     h1
         font-family: $heading-font
         font-weight: 300
         color: $name-color
-        font-size: 18px
+        font-size: 14px
         text-align: right
         padding: 0
         margin: 0
+
+        @media (min-width: $tablet)
+            font-size: 18px
 
     h4
         font-family: $body-font
         color: $heading-color
         font-weight: 300
-        font-size: 10px
+        font-size: 8px
         text-align: right
         padding: 0
         margin: 5px 0 0 0
+
+        @media (min-width: $tablet)
+            font-size: 10px
 
 .name-line
     right: 0
     height: 1px
     background: $line-color
-    width: 150px
+    width: 120px
     padding: 0
     margin: 20px 0 0 0
+
+    @media (min-width: $tablet)
+        width: 150px
