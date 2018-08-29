@@ -1,0 +1,136 @@
+.links
+    width: 95%
+    margin: 5% 0 0 5%
+    padding: 0 0 40px
+    background: white
+    background: linear-gradient(to left, rgba(255,255,255,0.8) 1%, white)
+    // background: url(./img/back-gradient.png) repeat-y
+    border-top-left-radius: 50px
+
+    @media (min-width: $tablet)
+        border-top-left-radius: 75px
+
+    a
+        width: 70%
+        padding: 35px 10% 0 20%
+        color: $body-color
+        text-decoration: none
+        display: block
+        font-family: $body-font
+        font-weight: 300
+        text-align: right
+        opacity: 0.65
+        transition: all 1s ease-in-out
+
+        &:hover
+            opacity: 1
+            transition: all 1s ease-in-out
+
+            .links-line
+                transform: translate(50px, 0)
+                transition: all 1s ease-in-out
+
+        h2
+            color: $name-color
+            font-size: 16px
+            font-weight: 700
+            margin: 0
+            padding: 0
+
+        p
+            margin: 5px 0
+            padding: 0
+            font-size: 14px
+
+        .links-line
+            width: 400px
+            height: 1px
+            background-color: $heading-color
+            margin: 20px 0
+            right: -270px
+            position: absolute
+            transition: all 1s ease-in-out
+
+            @media (min-width: $tablet)
+                right: -230px        
+
+.links-or-wrap
+    width: 100%
+
+.links-or
+    width: 14px
+    padding: 0 0 3px
+    margin: 60px auto 40px
+    color: $heading-color
+    border-top: 1px solid $heading-color
+    border-bottom: 1px solid $heading-color
+    font-family: body-font
+    font-size: 12px
+    text-align: center
+
+.links-sign-up
+    width: 94%
+    padding: 0 3% 25px
+    color: $body-color
+    text-decoration: none
+    display: block
+    font-family: $body-font
+    font-weight: 300
+    text-align: right
+
+    @media (min-width: $tablet)
+        width: 400px
+        margin: 0 auto
+
+    p
+        font-family: $body-font
+        color: $heading-color
+        text-align: center
+        font-size: 11px
+
+    input
+        width: 94%
+        margin: 0 2% 12px
+        padding: 5px 1%
+        font-family: $body-font
+        color: $body-font
+        font-size: 14px
+        border: 1px solid $heading-color
+        background: transparent
+    
+    input:focus
+        background: white
+        outline: none
+
+    input::placeholder
+        opacity: 0.2
+        font-size: 12px
+        padding: 5px 1%
+
+.sign-up-wrap
+    width: 94%
+    margin: 0 3%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+
+.sign-up-button
+    width: 200px !important
+    height: 50px
+    padding: 0 !important
+    top: 20px
+    position: relative
+    transition: all 0.25s ease-in-out
+    display: block
+
+    &:hover
+        color: black
+        transition: all 0.25s ease-in-out
+
+.sign-up-line
+    width: 200px
+    height: 1px
+    padding: 0
+    margin: 0
+    background: $body-color
