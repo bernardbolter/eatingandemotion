@@ -4,7 +4,6 @@
     padding: 0 0 40px
     background: white
     background: linear-gradient(to left, rgba(255,255,255,0.8) 1%, white)
-    // background: url(./img/back-gradient.png) repeat-y
     border-top-left-radius: 50px
 
     @media (min-width: $tablet)
@@ -26,6 +25,9 @@
             opacity: 1
             transition: all 1s ease-in-out
 
+            h2
+                text-decoration: underline
+
             .links-line
                 transform: translate(50px, 0)
                 transition: all 1s ease-in-out
@@ -42,17 +44,54 @@
             padding: 0
             font-size: 14px
 
+        @media (min-width: 600px)
+            width: 65%
+
+        @media (min-width: 700px)
+            width: 60%
+
+        @media (min-width: 800px)
+            width: 55%
+
+        @media (min-width: 900px)
+            width: 50%
+
+        @media (min-width: 1100px)
+            width: 47%
+
+        @media (min-width: 1300px)
+            width: 44%
+
         .links-line
             width: 400px
             height: 1px
             background-color: $heading-color
             margin: 20px 0
-            right: -270px
+            right: -243px
             position: absolute
             transition: all 1s ease-in-out
 
-            @media (min-width: $tablet)
-                right: -230px        
+            @media (min-width: 400px)
+                right: -263px
+
+            @media (min-width: 600px)
+                right: -213px
+
+            @media (min-width: 700px)
+                right: -163px
+
+            @media (min-width: 800px)
+                right: -109px
+
+            @media (min-width: 900px)
+                right: -47px
+
+            @media (min-width: 1100px)
+                width: 600px
+                right: -157px 
+
+            @media (min-width: 1300px) 
+                right: -67px     
 
 .links-or-wrap
     width: 100%
@@ -91,12 +130,15 @@
     input
         width: 94%
         margin: 0 2% 12px
-        padding: 5px 1%
+        padding: 8px 1%
         font-family: $body-font
-        color: $body-font
-        font-size: 14px
+        color: $body-color
+        font-size: 12px
         border: 1px solid $heading-color
         background: transparent
+
+        @media (min-width: $tablet)
+            font-size: 14px
     
     input:focus
         background: white
@@ -118,11 +160,22 @@
 .sign-up-button
     width: 200px !important
     height: 50px
-    padding: 0 !important
-    top: 20px
     position: relative
     transition: all 0.25s ease-in-out
     display: block
+
+    input
+        border-top: none
+        border-right: none
+        border-left: none
+        border-bottom: 1px solid $body-color
+        cursor: pointer
+        font-family: $body-font
+        color: $heading-color
+        font-weight: 200
+        font-size: 15px
+        text-align: left
+        padding: 0 0 0 10px
 
     &:hover
         color: black
