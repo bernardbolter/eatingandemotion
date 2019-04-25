@@ -1,9 +1,21 @@
-$("#link-to-overview").click(function(){
-    $("#overview").toggleClass("overview-on");
-    $("#main-wrap").toggleClass("main-wrap-off");
+$("#scroll").click(function(e) {
+  e.preventDefault();
+
+  $("body,html").animate(
+    {
+      scrollTop: $("#contact").offset().top
+    },
+    1200 //speed
+  );
 });
 
-$(".overview-link").click(function(){
-    $("#overview").toggleClass("overview-on");
-    $("#main-wrap").toggleClass("main-wrap-off");
+$("#scrollOver").click(function(e) {
+  e.preventDefault();
+
+  $("body,html").animate(
+    {
+      scrollTop: $("#overview").offset().top
+    },
+    1200 //speed
+  );
 });

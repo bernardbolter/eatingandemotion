@@ -1,37 +1,23 @@
 .overview
-    position: absolute
-    top: 0
-    height: 0
-    overflow: hidden
     padding: 0
     z-index: 100
     width: 100%
     margin: 0
-    transform: translate(100%,0)
     transition: transform 0.5s ease-in-out
-    background: $gradient-left
-    background: linear-gradient(to right, $gradient-right, $gradient-left)
 
-.overview-on
-    height: auto
-    padding: 0
-    transform: translate(0,0)
-    transition: transform 0.5s ease-in-out
 
 .overview-wrap
     width: 75%
-    margin: 5% 5% 5% 0
+    margin: 5% 5% 0 0
     padding: 25px 10% 50px 10%
     background: white
-    background: linear-gradient(to right, rgba(255,255,255,0.8) 1%, white)
-    border-bottom-right-radius: 50px
+    background: linear-gradient(to left, rgba(255,255,255,0.8) 1%, white)
     border-top-right-radius: 50px
 
     @media (min-width: $tablet)
         width: 75%
-        margin: 5% 5% 5% 0
+        margin: 5% 5% 0 0
         padding: 50px 10% 100px 10%
-        border-bottom-right-radius: 75px
         border-top-right-radius: 75px
 
     @media (min-width: 800px)
